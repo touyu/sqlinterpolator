@@ -13,7 +13,7 @@ func main() {
 
 ### SQLBoiler
 ```golang
-queryObject := entity.NewQuery(From("users"), models.UserWhere.ID.EQ(6))
+queryObject := models.NewQuery(From("users"), models.UserWhere.ID.EQ(6))
 query, args := queries.BuildQuery(queryObject)
 res, _ := sqlinterpolator.Interpolate(raw, args)
 fmt.Println(res)  // select * from users where id < 6;
