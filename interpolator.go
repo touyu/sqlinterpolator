@@ -42,7 +42,7 @@ func Interpolate(query string, args []interface{}) (string, error) {
 				return "", ErrInvalidBytes
 			}
 		case string:
-			new = v
+			new = fmt.Sprintf("'%s'", v)
 		case time.Time:
 			if v.IsZero() {
 				new = "'0000-00-00'"
