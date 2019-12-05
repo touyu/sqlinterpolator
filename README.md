@@ -3,7 +3,7 @@ Generate full query from placeholder query and args.
 
 ## Install
 ```
-go get -u github.com/touyu/sqlinterpolator
+$ go get -u github.com/touyu/sqlinterpolator
 ```
 
 ## Examples
