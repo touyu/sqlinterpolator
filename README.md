@@ -1,4 +1,5 @@
 # sqlinterpolator
+Generate full query from placeholder query and args.
 
 ## Examples
 ```golang
